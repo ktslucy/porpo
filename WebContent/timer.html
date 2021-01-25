@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+<p id="timer">timer</p>
+
+
+<script>
+var counter=0;
+var timeleft=5410;
+
+function timer(){
+ 	counter+=1;
+    document.getElementsByClassName("timer-txt")[0].innerHTML = covertSeconds(timeleft-counter);
+}
+
+function covertSeconds(s) {
+
+  var secd=s%60;
+  var min=Math.floor((s/60))%60;
+  var hour= Math.floor((s/60)/60);
+  
+  if(hour==0&&min==0&&secd==0){
+  	  clearInterval(timeIt);  
+  	document.getElementsByClassName("event-pdt")[0].style.backgroundColor="grey";
+  	
+  	  
+  	  
+  } 
+  
+	return hour+":"+min+":"+secd;
+}
+
+setInterval(timer, 1000);
+
+</script>
+</body>
+</html>
