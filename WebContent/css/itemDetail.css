@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+.item-wrap * {
+	font-family: noto sans;
+	color: #333;
+	letter-spacing: -.5px;
+}
+
+.item-wrap {
+	width: 1050px;
+	margin: 60px auto;
+	overflow: hidden;
+	
+}
+
+.img {
+	width: 430px;
+	height: 552px;
+	float: left;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.item-wrap .right {
+	float: right;
+	width: 560px;
+}
+
+.item-wrap .right .title {
+	padding: 10px 0 29px;
+}
+
+.item-wrap .right .title .name {
+	padding-right: 60px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 34px;
+}
+
+.item-wrap .right .title .desc {
+	padding: 4px 60px 0 0;
+	font-size: 14px;
+	color: #999;
+	line-height: 20px;
+}
+
+.item-wrap .right .dc-price {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: .5;
+}
+
+.item-wrap .right .price .won{
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0;
+}
+
+.item-wrap .right .price .orgin-price {
+	display: block;
+	font-size: 16px;
+	color: #999;
+	line-height: 24px;
+	text-decoration: line-through;
+	padding-top: 7px;
+	letter-spacing: 0;
+}
+
+.item-wrap .right .price-desc {
+	display: block;
+	padding-top: 7px;
+	font-size: 14px;
+	color: #5f0080;
+	line-height: 20px;
+	letter-spacing: 0;
+	font-weight: 500;
+}
+
+.item-wrap .right .info {
+	margin-top: 15px;
+}
+
+.item-wrap .right .info dl.list:nth-child(1) {
+	border-top: 1px solid #f4f4f4;
+}
+
+.item-wrap .right .info dl.list {
+	overflow: hidden;
+	padding: 18px 0;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.item-wrap .right .info dl.list dt.tit {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: 2px;
+	width: 150px;
+	float: left;
+	color: #666;
+}
+
+.item-wrap .right .info dl.list:last-child dt.tit {
+	line-height: 2;
+}
+
+.item-wrap .right .info dl.list dd.desc {
+	width: 406px;
+	float: right;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.item-wrap .right .info dl.list dd.desc .desc-cnt-wrap {
+	overflow: hidden;
+	float: left;
+	border: 1px solid #dddfe1;
+	border-radius: 3px;
+}
+
+.item-wrap .right .info dl.list dd.desc input.cnt {
+	float: left;
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+	border: 0;
+}
+
+.item-wrap .right .info dl.list dd.desc button {
+	width: 30px;
+	height: 30px;
+}
+
+.item-wrap .right .info dl.list dd.desc button.plus {
+	background-image: url("../image/ico_plus_on.svg");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: right;
+}
+
+.item-wrap .right .info dl.list dd.desc button.minus {
+	background-image: url("../image/ico_minus_on.svg");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+}
+
+.item-wrap .right .total {
+	padding: 50px 0 20px;
+	text-align: right;
+	float: left;
+}
+
+.item-wrap .right .total .tit {
+	font-weight: 700;
+	vertical-align: 3px;
+}
+
+.item-wrap .right .total .totalPrice {
+	padding-left: 8px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+}
+
+.item-wrap .right .total .won {
+	padding-left: 2px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	vertical-align: 2px;
+}
+
+.item-wrap .right .groupBtn {
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid red;
+}
+
+/* .item-wrap .right .cart {
+	display: inline-block;
+	width: 270px;
+	height: 54px;
+	margin-right: 10px;
+	border: 1px solid #5f0080;
+	border-radius: 3px;
+	background: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	color: #5f0080;
+	line-height: 52px;
+	letter-spacing: -.1px;
+	text-align: center;
+	float: right;
+} */
+
+.item-wrap .right .cart {
+display: inline-block;
+    width: 60%;
+    height: 54px;
+    border: 1px solid #5f0080;
+    border-radius: 3px;
+    background: #5f0080;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    line-height: 52px;
+    letter-spacing: -.1px;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+}
