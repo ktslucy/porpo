@@ -1,7 +1,4 @@
-//항상준비가 되어있다가 마우스 오버하면 display 블럭
-//메인 엠디부분은 메인 jsp로딩할때 main.do
 
-//클래스 바꾸면 되자나 붕신아!!ㅏ잔러ㅏㅣㄷㅁ러ㅏ더ㅏㅁㅈ햐
 var httpRequest;
 httpRequest = new XMLHttpRequest();
 httpRequest.onreadystatechange = getCategory;
@@ -13,6 +10,7 @@ function getCategory() {
 
 		var data = this.responseText;
 		var arr = JSON.parse(data);
+		console.log(data);
 
 		for (let i = 0; i < arr.length; i++) {
 			var li = document.createElement('li');
@@ -34,11 +32,9 @@ document.querySelector("#menu, #category").addEventListener("mouseenter", functi
 	document.getElementById("category").style.display="block";
 });
 
-
 document.querySelector("#category, #menu").addEventListener("mouseleave", function(evt) {
 	document.getElementById("category").style.display="none";
 });
-
 
 // 오류날떄 노드 구조 살피기
 const subCate = document.querySelector("#category");

@@ -7,6 +7,9 @@ public class MenuDTO {
 	private String ico_on;
 	private String ico_off;
 
+	
+	public MenuDTO() {}
+	
 	public MenuDTO(String menuNum, String menuName, String ico_on, String ico_off) {
 		this.menuNum=menuNum;
 		this.menuName=menuName;

@@ -9,7 +9,6 @@ import com.google.gson.Gson;
 import com.java.DAO.MenuDAO;
 import com.java.DTO.MenuDTO;
 
-
 public class Menu implements Command {
 
 	@Override
@@ -18,13 +17,12 @@ public class Menu implements Command {
 
 		System.out.println("menu.do");
 		MenuDAO menuDAO=MenuDAO.getInstance();
-		ArrayList<MenuDTO> menuList=menuDAO.getCate();
+		ArrayList<MenuDTO> menuList=menuDAO.getAllCate();
 		
 		Gson menu = new Gson();
 		String list=menu.toJson(menuList);
 		request.setAttribute("list", list);
 		 
 		return "menu.jsp";
-	    
 	}
 }

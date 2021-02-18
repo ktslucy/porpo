@@ -17,12 +17,12 @@ public class Main implements Command{
 		
 		//gnb 메뉴 가져오기
 		MenuDAO menuDAO=MenuDAO.getInstance();
-		ArrayList<MenuDTO> menuList=menuDAO.getCate();
+		ArrayList<MenuDTO> menuList=menuDAO.getAllCate();
 		request.setAttribute("menuList", menuList);
 		
 		//첫번째 카테고리 상품 8개 가져오기
 		ItemDAO itemDAO=ItemDAO.getInstance();
-		ArrayList<ItemDTO> mdList=itemDAO.getMdRecmd("101");
+		ArrayList<ItemDTO> mdList=itemDAO.getCateAllItem("101");
 		request.setAttribute("mdList", mdList);
 		
 		return "main.jsp";

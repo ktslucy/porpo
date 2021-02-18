@@ -17,7 +17,7 @@ public class MdCate implements Command{
 		
 		String category=request.getParameter("category");
 		ItemDAO itemDAO=ItemDAO.getInstance();
-		ArrayList<ItemDTO> mdList=itemDAO.getMdRecmd(category);
+		ArrayList<ItemDTO> mdList=itemDAO.getCateAllItem(category);
 
 		Gson menu = new Gson();
 		String list=menu.toJson(mdList);

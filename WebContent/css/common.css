@@ -20,6 +20,12 @@ a {
 	cursor: pointer;
 }
 
+button {
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -95,7 +101,7 @@ table {
 	position: relative;
 }
 
-#header	.navi-bflog>li.sub::before, .navi-aflog>li.sub::before {
+#header	.navi-bflog>li.sub::before {
 	content: "";
 	background: url(../image/down-arrow.png) 0 0 no-repeat;
 	background-position: center;
@@ -116,16 +122,23 @@ table {
 	background-color: #d8d8d8;
 }
 
-#header	.navi-bflog>li:last-child::after, .navi-aflog>li:last-child::after
-	{
+#header	.navi-bflog>li:last-child::after, .navi-aflog>li:last-child::after{
 	display: none;
 }
 
-#header	.navi-bflog>li>a, .navi-aflog>li>a {
+#header	.navi-bflog>li>a{
 	display: block;
 	float: left;
 	padding: 0 10px;
 	line-height: 35px;
+}
+
+#header .navi-aflog>li>a {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	line-height: 35px;
+	/* border: 1px solid red; */
 }
 
 #header	.navi-bflog>li:first-child>a {
@@ -203,9 +216,9 @@ table {
 
 #header .gnb #menu>a {
 	width: 200px;
-    padding-left: 19px;
-    text-align: left;
-    letter-spacing: .4px;
+	padding-left: 19px;
+	text-align: left;
+	letter-spacing: .4px;
 }
 
 /*
@@ -253,17 +266,32 @@ table {
 	height: 15px;
 }
 
-.btn-location {
+.btn-cart {
 	overflow: hidden;
 	position: absolute;
 	right: 4px;
 	top: 10px;
 	width: 36px;
 	height: 36px;
-	border: 0 none;
 	background: url('../image/ico_cart.svg') no-repeat 50% 50%;
 	font-size: 0;
-	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.btn-cartCnt {
+	display: block;
+	border: 1px solid #f8f9fa;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #5f0080;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 10px;
+	padding: 3px 5px;
+	display: none;
 }
 
 #header #category {
@@ -271,7 +299,7 @@ table {
 	top: 54px;
 	background-color: #fff;
 	display: none;
-	border-top: 1px solid #ccc;
+	border-top: 5px solid #f9f9f9;
 }
 
 #header #category li {
@@ -313,13 +341,12 @@ table {
 	margin: 0 auto;
 	position: relative;
 	z-index: 50;
-	border-top: 1px solid #ccc;
+	border-top: 5px solid #f9f9f9;
 	clear: both;
 }
 
 #footer {
 	overflow: hidden;
-	border-top: 1px solid #f1f3f5;
 	background-color: #f8f9fa;
 	padding: 20px 0;
 }

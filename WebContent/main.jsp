@@ -12,8 +12,6 @@
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
 	rel="stylesheet">
 
-
-
 <title>Insert title here</title>
 
 </head>
@@ -30,13 +28,13 @@
 	<div class="slider-wrap">
 		<ul class="slider-container">
 			<li class="slide"><a href="#none"
-				style='background-image: url("image/slide_1.jpg")'></a></li>
+				style='background-image: url("image/slide_01.jpg")'></a></li>
 			<li class="slide"><a href="#none"
-				style='background-image: url("image/slide_2.jpg")'></a></li>
+				style='background-image: url("image/slide_02.jpg")'></a></li>
 			<li class="slide"><a href="#none"
-				style='background-image: url("image/slide_3.jpg")'></a></li>
+				style='background-image: url("image/slide_33.jpg")'></a></li>
 			<li class="slide"><a href="#none"
-				style='background-image: url("image/slide_4.jpg")'></a></li>
+				style='background-image: url("image/slide_04.jpg")'></a></li>
 		</ul>
 	</div>
 
@@ -131,11 +129,11 @@
 				<li><a href="#none" style="background-image: url('image/insta6.jpg')"></a> 
 			</ul>
 		</div>
-
 	</div>
 	<jsp:include page="footer.jsp" />
 
 	<script src="js/slide.js"></script>
 	<script defer src="js/main.js"></script>
+	
 </body>
 </html>
